@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    transition: .3s linear;
+    font-family: 'Times New Roman', Times, serif;
+}
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+}
+.logo img{
+    height: 10rem;
+}
+section{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(yo.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 2rem 7rem;
+}
+.header{
+  background: darkslategrey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 7%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+}
+.header .nav-bar{
+    margin-bottom: -30px;
+    
+}
+.header .nav-bar a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: gainsboro;
+    font-weight: lighter;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.header .nav-bar a:hover {
+    color: red;
+}
+section .content{
+    max-width: 60rem;
+}
+section .content h3{
+    font-size: 6rem;
+    color: white;
+}
+section .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: white;
+}
+section .content .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 7rem;
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+    font-size: 67px;
+}
+section .content .btn:hover{
+    background-color: blue;
+}
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    background: none;
+}
+.images .cup{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s left 1s;
+}
+.images .cup:hover{
+    bottom: 40px;
+}
